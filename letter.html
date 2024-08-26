@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		    <meta charset="UTF-8">
+		        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+			    <title>Emotion Letter</title>
+			        <link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		    <div class="container">
+			            <select id="emotionSelect" aria-label="Select your feeling">
+					                <option value="">Select your feeling</option>
+							            <option value="happy">Happiness</option>
+								                <option value="sad">Sadness</option>
+										            <option value="frustrated">Frustration</option>
+											                <option value="depressed">Depression</option>
+													            <option value="lonely">Loneliness</option>
+														            </select>
+															            <div class="envelope-wrapper">
+																	                <div class="envelope">
+																				                <div class="letter">
+																							                    <div class="text" id="message">
+																										                            <strong>Dear Person.</strong>
+																													                            <p>Select your feeling to see a message.</p>
+																																                        </div>
+																																			                </div>
+																																					                <div class="heart"></div>
+																																							            </div>
+																																								            </div>
+																																									        </div>
+
+																																										    <script>
+																																											            const envelope = document.querySelector(".envelope-wrapper");
+																																											            const heart = document.querySelector(".heart");
+																																											            const emotionSelect = document.getElementById("emotionSelect");
+																																											            const message = document.getElementById("message");
+
+																																											            heart.addEventListener("click", () => {
+																																																																																									            envelope.classList.toggle("flap");
+																																																																																									        });
+
+																																											            emotionSelect.addEventListener("change", () => {
+																																																																																									            const emotion = emotionSelect.value;
+																																																																																									            let text = "";
+
+																																																																																									            switch (emotion) {
+																																																																																																																																							                case "happy":
+																																																																																																																																								                    text = "I hope your day is filled with joy!";
+																																																																																																																																								                    break;
+																																																																																																																																								                case "sad":
+																																																																																																																																								                    text = "It's okay to feel sad sometimes. Allow yourself to processes those emotions; brighter days are ahead";
+																																																																																																																																								                    break;
+																																																																																																																																								                case "frustrated":
+																																																																																																																																								                    text = "Take a deep breath. You can overcome this!";
+																																																																																																																																								                    break;
+																																																																																																																																								                case "depressed":
+																																																																																																																																								                    text = "Remember, you are not alone. Seek support.";
+																																																																																																																																								                    break;
+																																																																																																																																								                case "lonely":
+																																																																																																																																								                    text = "I’m thinking of you. You're important to me.";
+																																																																																																																																								                    break;
+																																																																																																																																								                default:
+																																																																																																																																								                    text = "Select your feeling to see a message.";
+																																																																																																																																								            }
+
+																																																																																									            message.innerHTML = `<strong>Dear Person.</strong><p>${text}</p>`;
+																																																																																									        });
+																																											        </script>
+	</body>
+</html><!DOCTYPE html>
+<html lang="en">
+	<head>
+		    <meta charset="UTF-8">
+		        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+			    <title>Emotion Letter</title>
+			        <link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		    <div class="container">
+			            <select id="emotionSelect" aria-label="Select your feeling">
+					                <option value="">Select your feeling</option>
+							            <option value="happy">Happiness</option>
+								                <option value="sad">Sadness</option>
+										            <option value="frustrated">Frustration</option>
+											                <option value="depressed">Depression</option>
+													            <option value="lonely">Loneliness</option>
+														            </select>
+															            <div class="envelope-wrapper">
+																	                <div class="envelope">
+																				                <div class="letter">
+																							                    <div class="text" id="message">
+																										                            <strong>Dear Person.</strong>
+																													                            <p>Select your feeling to see a message.</p>
+																																                        </div>
+																																			                </div>
+																																					                <div class="heart"></div>
+																																							            </div>
+																																								            </div>
+																																									        </div>
+
+																																										    <script>
+																																											            const envelope = document.querySelector(".envelope-wrapper");
+																																											            const heart = document.querySelector(".heart");
+																																											            const emotionSelect = document.getElementById("emotionSelect");
+																																											            const message = document.getElementById("message");
+
+																																											            heart.addEventListener("click", () => {
+																																																																																									            envelope.classList.toggle("flap");
+																																																																																									        });
+
+																																											            emotionSelect.addEventListener("change", () => {
+																																																																																									            const emotion = emotionSelect.value;
+																																																																																									            let text = "";
+
+																																																																																									            switch (emotion) {
+																																																																																																																																							                case "happy":
+																																																																																																																																								                    text = "I hope your day is filled with joy!";
+																																																																																																																																								                    break;
+																																																																																																																																								                case "sad":
+																																																																																																																																								                    text = "It's okay to feel sad sometimes. Allow yourself to processes those emotions; brighter days are ahead";
+																																																																																																																																								                    break;
+																																																																																																																																								                case "frustrated":
+																																																																																																																																								                    text = "Take a deep breath. You can overcome this!";
+																																																																																																																																								                    break;
+																																																																																																																																								                case "depressed":
+																																																																																																																																								                    text = "Remember, you are not alone. Seek support.";
+																																																																																																																																								                    break;
+																																																																																																																																								                case "lonely":
+																																																																																																																																								                    text = "I’m thinking of you. You're important to me.";
+																																																																																																																																								                    break;
+																																																																																																																																								                default:
+																																																																																																																																								                    text = "Select your feeling to see a message.";
+																																																																																																																																								            }
+
+																																																																																									            message.innerHTML = `<strong>Dear Person.</strong><p>${text}</p>`;
+																																																																																									        });
+																																											        </script>
+	</body>
+</html>
